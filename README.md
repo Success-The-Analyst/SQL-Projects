@@ -5,7 +5,27 @@ This repository contains various SQL-related projects and queries to demonstrate
 ## Projects
 
 1. **Data Cleaning with SQL**
-   - SQL queries focused on cleaning and transforming raw data.
+: This project demonstrates various techniques for cleaning data in SQL. It uses an ecommerce customer database to showcase how to handle common data cleaning challenges, such as:
+
+      - **Handling Missing Data**: 
+        - Identifying and replacing missing values in key fields like email and total spent.
+      - **Removing Duplicates**:
+        - Finding and removing duplicate records based on criteria like first name, last name, and email.
+      - **Fixing Inconsistent Data Formatting**:
+        - Standardizing phone numbers and city/country names for consistency.
+      - **Handling Outliers**:
+        - Identifying and capping outliers in the `total_spent` column.
+      - **Data Transformation**:
+        - Converting string dates to a standard date format and ensuring correct data types.
+      - **Dealing with Irrelevant Data**:
+        - Dropping unnecessary columns and removing irrelevant rows.
+      - **Data Consistency**:
+        - Ensuring referential integrity and checking for logical consistency in the data.
+      - **Date/Time Data Handling**:
+        - Ensuring dates are correctly formatted and parsed.
+      - **Validation and Reporting**:
+        - Enforcing data constraints (e.g., unique emails) and generating reports for validation and profiling.
+
    
 2. **Insta Data Clone**
    - SQL queries to replicate a simplified Instagram database.
