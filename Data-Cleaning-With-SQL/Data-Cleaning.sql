@@ -141,20 +141,8 @@ SELECT * FROM customers WHERE total_spent < 0;
 -- Step 1: Parse dates correctly if they are stored as strings
 UPDATE customers SET signup_date = STR_TO_DATE(signup_date, '%Y-%m-%d');
 
--- 10. Data Enrichment
 
--- Step 1: Example of augmenting data using a lookup table
--- Assume we have a `city_country_lookup` table to standardize city-country relationships
--- We can join this table to clean data.
-
--- Step 2: Add external data (e.g., geolocation data based on `city` or `zip code`)
-
--- 11. Data Integration
-
--- Step 1: Merge data correctly from different tables (e.g., merge customer data with purchase data)
--- Example: SELECT c.customer_id, c.first_name, p.total_purchase FROM customers c JOIN purchases p ON c.customer_id = p.customer_id;
-
--- 12. Validation and Reporting
+-- 10. Validation and Reporting
 
 -- Step 1: Ensure all constraints are met (e.g., unique emails, non-negative `total_spent`)
 ALTER TABLE customers ADD CONSTRAINT email_unique UNIQUE (email);
