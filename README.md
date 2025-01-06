@@ -27,8 +27,29 @@ This repository contains various SQL-related projects and queries to demonstrate
         - Enforcing data constraints (e.g., unique emails) and generating reports for validation and profiling.
 
    
-2. **Insta Data Clone**
-   - SQL queries to replicate a simplified Instagram database.
+2. **Insta Data Clone** : This project mimics the data structure of an Instagram-like social media platform. It demonstrates various SQL operations such as managing users, photos, comments, likes, and tags. The database schema is designed to handle social media interactions between users, their posts, and the engagement (likes, comments, follows).
+
+      Key features:
+      
+      - **Users Table**: Stores information about the users such as username and account creation date.
+      - **Photos Table**: Contains information about the photos posted by users, including the photo's URL and user reference.
+      - **Comments Table**: Users can comment on photos, and each comment is linked to a photo and a user.
+      - **Likes Table**: Records which users have liked which photos, allowing tracking of engagement.
+      - **Follows Table**: Allows users to follow one another, forming a network of followers and followees.
+      - **Tags Table**: Allows tagging of photos, and the junction table `photo_tags` is used to link photos to tags.
+      
+      #### Key SQL Queries:
+      
+      - **Find the 5 oldest users**: Selects the users who have been around the longest based on their `created_at` timestamp.
+      - **Day of the week with most registrations**: Identifies which day of the week has the highest number of user signups. This can help schedule marketing campaigns.
+      - **Find users who have never posted a photo**: Selects users who have registered but never uploaded a photo.
+      - **Find the most liked photo**: Identifies which photo has received the most likes.
+      - **User ranking by the number of posts**: Ranks users based on the number of photos they have posted.
+      - **Find the top 5 most commonly used hashtags**: Determines which hashtags are most frequently used across photos.
+      - **Identify users who have liked every photo**: Finds users who have liked all the photos posted in the platform, which could indicate bot activity.
+      - **Find users who have never commented on any photos**: Helps identify inactive users who have not interacted with the photos by leaving comments.
+      - **Identify the percentage of users who have either never commented or have commented on every photo**: This helps determine the level of user engagement with photos and comments.
+      
 
 3. **SQL 30 Queries**
    - A collection of 30 useful SQL queries for practical data manipulation.
